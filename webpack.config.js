@@ -13,7 +13,7 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    publicPath: '/',
+    publicPath: 'https://henrikato.github.io/projeto-pwa/',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
