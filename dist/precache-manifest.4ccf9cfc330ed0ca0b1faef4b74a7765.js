@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://henrikato.github.io/projeto-pwa/img/icon-180.png"
   },
   {
-    "revision": "81cf7adf1241e1f43911f8686e11a100",
+    "revision": "ed307a588b0cca61314deedb6f8c2af1",
     "url": "https://henrikato.github.io/projeto-pwa/index.html"
   },
   {

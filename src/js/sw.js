@@ -2,6 +2,7 @@ const cacheName = "v1";
 
 const resourecesToPrecache = [
   '/',
+  'index.html',
   '/assets/css/styles.css',
   '/assets/js/script.js',
   'https://kit.fontawesome.com/74d73efc2b.js',
