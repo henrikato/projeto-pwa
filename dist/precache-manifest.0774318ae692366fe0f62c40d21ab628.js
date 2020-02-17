@@ -28,11 +28,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://henrikato.github.io/projeto-pwa/js/scripts.js"
   },
   {
-    "revision": "34d55a0b6bf6f01ae106",
+    "revision": "67ed5731d5e7e3592d63",
     "url": "https://henrikato.github.io/projeto-pwa/main.css"
   },
   {
-    "revision": "34d55a0b6bf6f01ae106",
+    "revision": "67ed5731d5e7e3592d63",
     "url": "https://henrikato.github.io/projeto-pwa/main.js"
   },
   {

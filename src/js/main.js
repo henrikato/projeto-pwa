@@ -1,6 +1,6 @@
 if ('serviceWorker' in navigator) {
   console.info("Registro do serviceWorker em progresso...");
-  navigator.serviceWorker.register('/sw.js')
+  navigator.serviceWorker.register('./sw.js')
     .then(() => console.info("serviceWorker registrado com sucesso!"))
     .catch(err => console.error("Erro ao registrar serviceWorker...", err))
 }
