@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/icon-180.png"
   },
   {
-    "revision": "a6e22abbcd100b7977ec86620adc41ed",
+    "revision": "ac6490485e28f69a39894167b8db238d",
     "url": "/index.html"
   },
   {
