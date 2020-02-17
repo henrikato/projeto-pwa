@@ -1,0 +1,98 @@
+main > .restaurante {
+  display: grid;
+  grid-template:
+    'banner'
+    'nome'
+    'detalhes'
+    / auto;
+  padding: 0.5em;
+
+  & > .banner {
+    grid-area: banner;
+    display: flex;
+    justify-content: center;
+    height: 125px;
+    width: 100%;
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      height: 175px;
+      width: 100%;
+      left: 0;
+      top: 0;
+      background:
+        linear-gradient(transparent, #fafafa),
+        url('https://i.redd.it/wws6jjswpq2z.jpg') top no-repeat;
+      background-size: cover;
+      filter: blur(5px);
+    }
+
+    & > .logo {
+      height: 100px;
+      width: 150px;
+      object-fit: cover;
+    }
+  }
+
+  & > .nome {
+    grid-area: nome;
+    font-weight: lighter;
+    justify-self: center;
+    font-size: 14pt;
+  }
+
+  & > .detalhes {
+    grid-area: detalhes;
+    padding: 0.5em 1em;
+
+    & > .descricao {
+      font-size: 10pt;
+      margin-bottom: 0.5em;
+    }
+
+    & .translucido {
+      opacity: 0.3;
+    }
+
+    & > .classificacao {
+      display: grid;
+      grid-area: classificacao;
+      grid-row-gap: 1em;
+      grid-template:
+        'estrelas valor'
+        'comentarios comentarios'
+        / auto;
+      margin-bottom: 0.5em;
+
+      & > .estrelas {
+        grid-area: estrelas;
+        display: flex;
+        align-items: center;
+
+        & > .pontuacao {
+          padding-left: 10px;
+        }
+      }
+
+      & > .valor {
+        grid-area: valor;
+        justify-self: end;
+      }
+
+      & > .comentarios {
+        grid-area: comentarios;
+        border: none;
+        background: #f9a825;
+        padding: 5px 10px;
+        border-radius: 15px;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+
+        &:active {
+          background: #fbc02d;
+        }
+      }
+    }
+  }
+}

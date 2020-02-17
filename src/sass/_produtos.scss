@@ -1,0 +1,109 @@
+main > .produtos {
+  margin-bottom: 60px;
+
+  & > .form-busca {
+    margin: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > label {
+      font-size: 10pt;
+    }
+
+    & > input {
+      padding: 14px 10px;
+      border: none;
+      background: transparent;
+      border-bottom: 2px solid #f9a825;
+    }
+
+    & > button {
+      width: 48px;
+      height: 48px;
+      background: transparent;
+      color: #f9a825;
+      border: none;
+      border-bottom: 2px solid #f9a825;
+
+      & > i { font-size: 14pt; }
+    }
+  }
+
+  & > .categorias {
+    background: #fafafa;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+
+    &.sticky {
+      position: fixed;
+      width: 100%;
+      top: 50px;
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    & > a {
+      text-decoration: none;
+      margin: 5px 15px;
+      padding: 0 5px;
+      color: rgba(0, 0, 0, 0.87);
+
+      &:active {
+        font-weight: bold;
+      }
+
+      &.current {
+        border-bottom: 2px solid #f9a825;
+      }
+    }
+  }
+
+  &.avoid-header { margin-top: 42px; }
+
+  & .produto {
+    display: grid;
+    grid-template:
+      'nome nome'
+      'imagem descricao'
+      'imagem valor'
+      / 120px auto;
+    align-items: center;
+    background: transparent;
+    border: none;
+    padding: 15px 10px;
+    color: rgba(0, 0, 0, 0.87);
+    text-decoration: none;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #ccc;
+    }
+
+    & > .wrapper-imagem {
+      width: 100px;
+      grid-area: imagem;
+
+      & > img {
+        height: 100px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    & > .nome {
+      grid-area: nome;
+      font-size: 11pt;
+      padding-bottom: 5px;
+    }
+
+    & > .descricao {
+      grid-area: descricao;
+      font-size: 10pt;
+      padding-bottom: 5px;
+    }
+
+    & > .valor {
+      grid-area: valor;
+    }
+  }
+}
